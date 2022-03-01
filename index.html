@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Snippet Cheat Sheet</title>
+    <!-- <link rel="stylesheet" href="./assets/styles/reset.css"> -->
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class ="colorText">CSS Snippet Cheatsheet</h1>
+        <p class="whiteText">Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy.</p>
+    </header>
+    <main class="snippets">
+
+        <section class="codeCard">
+            <h3 class="cardHeader colorText">Flexbox Row</h3>
+            <p class="colorText snippetDescription">Use these three properties to create a Flexbox row layout.</p>
+
+            <pre class="codeBlock linear-gradient-background selectAll">
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}</pre>
+        </section>
+        <section class="codeCard">
+            <h3 class="cardHeader colorText">Flexbox Column</h3>
+            <p class="colorText snippetDescription">Use this to create a Flexbox column layout.</p>
+
+            <pre class="codeBlock linear-gradient-background selectAll">
+.column {
+    display: flex;
+    flex-direction: column;
+}</pre>
+        </section>
+        <section class="codeCard">
+            <h3 class="cardHeader colorText">CSS Grid Layout</h3>
+            <p class="colorText snippetDescription">Build a 12-column layout using CSS Grid.</p>
+
+            <pre class="codeBlock linear-gradient-background selectAll">
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 
+    repeat(12, 1fr);
+}</pre>
+       
+        </section>
+        <section class="codeCard">
+            <h3 class="cardHeader colorText">Linear Gradients</h3>
+            <p class="colorText snippetDescription">This will create a background linear gradient from top to bottom.</p>
+
+            <pre class="codeBlock linear-gradient-background selectAll">
+.linear-gradient-background {
+    background-image: 
+    linear-gradient(
+        rgba(232, 102, 236, 0.3) 0%,
+        rgba(232, 102, 236, 0.6) 100%
+    );
+}</pre>
+       
+        </section>
+        <section class="codeCard">
+            <h3 class="cardHeader colorText">Box Transition Glow</h3>
+            <p class="colorText snippetDescription">Use transition and box shadows to glow on hover.</p>
+
+            <pre class="codeBlock linear-gradient-background selectAll">
+.codeCard .cardHeader {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.codeCard:hover,
+.codeCard:hover .cardHeader {
+    box-shadow: inset 0px 0px 8px 
+        rgba(232, 102, 236, 1), 
+        0 0 15px 
+        rgba(232, 102, 236, 1);
+}</pre>
+       
+        </section>
+        <section class="codeCard">
+            <h3 class="cardHeader colorText">Overlay Card with Title</h3>
+            <p class="colorText snippetDescription">Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+
+            <pre class="codeBlock linear-gradient-background selectAll">
+.cardHeader {
+    position: relative;
+    margin-top: -20px;
+}</pre>       
+        </section>
+        <section class="codeCard">
+            <h3 class="cardHeader colorText">Force No More Than Three Items/Row</h3>
+            <p class="colorText snippetDescription">Use flex property to force the flex container to wrap after three flex items are on the same row.</p>
+
+            <pre class="codeBlock linear-gradient-background selectAll">
+.flexContainer {
+    display: flex;
+    flex-flow: row wrap;
+}
+.flexItem {
+    flex: 1 1 25.1%;
+}</pre>       
+        </section>
+        <section class="codeCard">
+            <h3 class="cardHeader colorText">Force No More Than Two Items/Row</h3>
+            <p class="colorText snippetDescription">Use flex property to force the flex container to wrap after two flex items are on the same row.</p>
+
+            <pre class="codeBlock linear-gradient-background selectAll">
+.flexContainer {
+    display: flex;
+    flex-flow: row wrap;
+}
+.flexItem {
+    flex: 1 1 33.4%;
+}</pre>       
+        </section>
+        <section class="codeCard">
+            <h3 class="cardHeader colorText">Force No More Than One Items/Row</h3>
+            <p class="colorText snippetDescription">Use flex property to force the flex container to wrap after one flex item is on the row.</p>
+
+            <pre class="codeBlock linear-gradient-background selectAll">
+.flexContainer {
+    display: flex;
+    flex-flow: row wrap;
+}
+.flexItem {
+    flex: 1 1 50.1%;
+}</pre>       
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <h2 class="colorText">Made with ❤️ and CSS</h2>
+    </footer>
+
+</body>
+</html>
